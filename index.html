@@ -9,6 +9,44 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <main class="main-wrapper">
+        <div class="gameboard-wrapper">
+            <div class="gameboard-row1">
+                <button id="top-left" class="gameboard-block"></button>
+                <button id="top-center" class="gameboard-block"></button>
+                <button id="top-right" class="gameboard-block"></button>
+            </div>
+            <div class="gameboard-row2">
+                <button id="middle-left" class="gameboard-block"></button>
+                <button id="middle-center" class="gameboard-block"></button>
+                <button id="middle-right" class="gameboard-block"></button>
+            </div>
+            <div class="gameboard-row3">
+                <button id="bottom-left" class="gameboard-block"></button>
+                <button id="bottom-center" class="gameboard-block"></button>
+                <button id="bottom-right" class="gameboard-block"></button>
+            </div>
+            <div class="score-wrapper">
+                <div class="player1-score">
+                    <p>PLAYER(X)</p>
+                    <p class="player1-display">
+                        <span class="player1-score-span">0</span>
+                    </p>
+                </div>
+                <div class="score-tie">
+                    <p>TIE</p>
+                    <p class="tie-display">
+                        <span class="tie-score-span">0</span>
+                    </p>
+                </div>
+                <div class="player2-score">
+                    <p>PLAYER(O)</p>
+                    <p class="player2-display">
+                        <span class="player2-score-span">0</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

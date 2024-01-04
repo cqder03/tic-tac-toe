@@ -1,3 +1,85 @@
+@font-face {
+    font-family: 'alfa-slab';
+    src: url(assets/fonts/Alfa-slab/AlfaSlabOne-Regular.ttf);
+    font-weight: normal;
+}
+
+:root {
+    --potential-color1: #10002b;
+    --potential-color2: #4f518c;
+    --gameboard-border: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'alfa-slab';
+    color: white;
+}
+
 body {
-    background-color: #1f2937;
+    background-color: #10002b;
+}
+
+.main-wrapper {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+
+/* Gameboard styles */
+.gameboard-row1,
+.gameboard-row2,
+.gameboard-row3 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.gameboard-wrapper {
+    margin-top: 10%;
+}
+
+.gameboard-block {
+    height: 200px;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    font-size: 10rem;
+    border: 3px solid var(--gameboard-border);
+    background-color: transparent;
+}
+
+#top-left,
+#top-center,
+#top-right {
+    border-top: none;
+}
+
+#top-left,
+#middle-left,
+#bottom-left {
+    border-left: none;
+}
+
+#top-right,
+#middle-right,
+#bottom-right {
+    border-right: none;
+}
+
+#bottom-left,
+#bottom-center,
+#bottom-right {
+    border-bottom: none;
+}
+/* Gameboard styles */
+
+.score-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 4%;
+    text-align: center;
+    font-size: 2rem
 }
