@@ -83,3 +83,24 @@ body {
     text-align: center;
     font-size: 2rem
 }
+
+.players-img {
+    height: 25px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.buttons-wrapper > button {
+    background-color: transparent;
+    font-size: 3rem;
+    border: none;
+}
+
+.buttons-wrapper > button:active {
+    transform: scale(0.95);
+}
